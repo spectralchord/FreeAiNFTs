@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "keywords": [],
+  "author": "",
+  "scripts": {
+    "dev": "ts-node-dev --no-notify --pretty --respawn --transpile-only src/server",
+    "build": "tsc -p tsconfig.release.json",
+    "start": "ts-node src/server.ts"
+  },
+  "dependencies": {
+    "axios": "^1.5.1",
+    "buffer": "^6.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ethers": "5.7.2",
+    "express": "^4.18.2",
+    "is-what": "^4.1.15",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1",
+    "zod": "^3.22.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@types/cors": "^2.8.14",
+    "@types/express": "^4.17.18",
+    "@types/morgan": "^1.9.6",
+    "@types/node": "20.8.2",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "2.0.0",
+    "typescript": "^5.2.2"
+  }
+}
