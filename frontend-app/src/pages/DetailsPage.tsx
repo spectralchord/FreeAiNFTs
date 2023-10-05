@@ -260,7 +260,7 @@ const DetailsPage = () => {
         } else if (isConnected && chain?.id === parseInt(CHAIN_ID)) {
             setIsLoadingSubmitPreference(true)
             try {
-                await registerName({preference: values.preference})
+                await registerName({preference: values.preference, contractAddress: id})
                 setIsLoadingSubmitPreference(false)
                 setIsSubscribed(true)
                 setSubscribersCount(subscribersCount + 1)
